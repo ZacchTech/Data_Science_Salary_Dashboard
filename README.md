@@ -1,272 +1,236 @@
-# 📊 Data Science Salary Dashboard Analysis
+# 📊 Data Science Salary Dashboard
 
-![Dashboard Overview](./image/data_dashboard.png)
+![Data Science Salary Dashboard](image/data_salary_dashboard.png)
 
-## Overview
+## 🌟 Project Overview
 
-The data industry is one of the fastest-growing sectors in the world, yet salary expectations often vary significantly across job roles, locations, and skill sets. For aspiring professionals and experienced practitioners alike, understanding these salary trends is essential for making informed career decisions.
+The data industry continues to experience rapid growth, creating new opportunities for professionals across Data Analytics, Data Science, Machine Learning, and Software Engineering. However, salary expectations often vary significantly based on job title, location, and employment type.
 
-In this project, I developed an interactive Excel dashboard that analyzes real-world Data Science job market data. Using Excel's advanced analytical capabilities, I transformed raw datasets into a dynamic reporting solution that enables users to explore salary patterns, compare job roles, evaluate skills, and identify career opportunities within the data industry.
+To better understand these trends, I developed an interactive Excel dashboard that analyzes real-world job market data and provides insights into salary distribution across various dimensions.
 
-This project demonstrates my ability to move beyond basic spreadsheet analysis by applying data cleaning, transformation, modeling, visualization, and business intelligence techniques to generate meaningful insights.
+This dashboard enables users to explore salary trends, compare compensation across countries, evaluate different employment types, and identify the most active job platforms through an intuitive and interactive interface.
 
----
 
 # 🎯 Business Problem
 
-Professionals entering the data field often face important questions:
+Job seekers and professionals frequently ask:
 
-* Which data roles offer the highest salaries?
-* Which skills are associated with higher compensation?
-* How does location influence earning potential?
-* What career paths provide the strongest growth opportunities?
+* Which data-related roles offer the highest salaries?
+* How do salaries vary across countries?
+* Does employment type affect earning potential?
+* Which job platforms have the highest number of opportunities?
 
-Without data-driven insights, these questions are often answered through assumptions rather than evidence.
+Without data-driven analysis, answering these questions can be difficult.
 
-The goal of this project was to build an interactive dashboard capable of helping users explore salary trends and make informed career decisions using real-world job market data.
+This project was created to transform raw job market data into meaningful insights that support informed career decisions.
 
----
 
-# 📂 Dataset Information
+# 📂 Dataset
 
-The dataset contains Data Science job posting information from 2023 and includes:
+The dataset contains real-world job posting information, including:
 
 * 💼 Job Titles
-* 💰 Annual Salary Information
-* 🌍 Job Locations
-* 🏢 Employment Types
-* 🛠️ Required Skills
-* 📊 Job Market Data
+* 💰 Salary Information
+* 🌍 Countries
+* 🏢 Job Platforms
+* ⏰ Job Schedule Types
+* 📊 Job Posting Data
 
-The data was imported into Excel and prepared for analysis using Power Query and Excel's Data Model.
+The data was analyzed and transformed within Microsoft Excel to build a dynamic reporting solution.
 
----
 
-# 🛠 Tools & Skills Used
+
+# 🛠️ Tools & Skills Used
 
 ### Microsoft Excel
 
-The project was built entirely in Microsoft Excel using:
+The following Excel skills were utilized throughout this project:
 
-* Power Query
-* Data Cleaning
-* Data Transformation
-* Data Modeling
-* Pivot Tables
-* Pivot Charts
-* DAX Measures
-* XLOOKUP
-* Data Validation
-* Dashboard Design
-* Data Visualization
+* 📈 Charts & Data Visualization
+* 🧮 Advanced Formulas
+* ❎ Data Validation
+* 🔍 Lookup Functions
+* 📊 Dashboard Design
+* 📋 Structured Tables
+* 📑 Data Analysis
 
----
 
-# 🔄 Data Preparation & Transformation
 
-Before any analysis could be performed, the raw datasets required cleaning and transformation.
+# 📊 Dashboard Overview
 
-### Salary Dataset Transformation
+The final dashboard was designed to provide a simple, interactive, and user-friendly experience for exploring salary trends within the data industry.
 
-![Data Validation](image/data_validation.png)
+![Dashboard Overview](image/data_dashboard.png)
 
-## Key Transformation Activities
+### Dashboard Components
 
-* Reviewed dataset structure and quality
-* Standardized data formats
-* Removed unnecessary fields
-* Organized salary information
-* Prepared skills data for analysis
-* Loaded transformed datasets into Excel's Data Model
+#### 🎯 Job Title Analysis
 
-Power Query significantly streamlined the ETL (Extract, Transform, Load) process and provided a scalable foundation for the dashboard.
+The dashboard includes a job title filter that allows users to explore salary trends across different roles.
+
+Users can quickly compare salaries between positions such as:
+
+* Data Scientist
+* Data Engineer
+* Software Engineer
+* Business Analyst
+* Machine Learning Engineer
+
+This helps identify which roles command higher compensation and highlights potential career progression opportunities.
+
+--
+
+#### 🌍 Country Salary Analysis
+
+The dashboard features an interactive map visualization showing salary distribution across different countries.
+
+This visualization helps users:
+
+* Compare salaries globally
+* Identify high-paying regions
+* Explore geographic salary trends
+* Understand regional compensation differences
+
+--
+
+#### ⏰ Job Schedule Type Analysis
+
+The dashboard analyzes salary information across employment types, including:
+
+* Full-Time
+* Part-Time
+* Contract
+* Internship
+
+This allows users to evaluate how employment arrangements influence compensation levels.
 
 -
 
-# 🏗 Data Modeling
+# 📌 Key Performance Indicators (KPIs)
 
-After transforming the datasets, they were loaded into Excel's Data Model to support advanced analysis.
+The dashboard includes dynamic KPI cards that automatically update based on user selections.
 
-The Data Model enabled efficient relationships between datasets and supported more advanced calculations through Pivot Tables and DAX measures.
+### 💰 Median Salary
 
-# 📊 Dashboard Development
+Displays the median salary based on selected filters.
 
-The dashboard was designed to provide a user-friendly and interactive experience for exploring salary and skills data.
+### 🏆 Top Job Platform
 
-## Final Dashboard
+Highlights the platform with the highest number of job postings.
 
-![Final Dashboard](image.data_salary_dashboard.png)
+### 📈 Top Job Count
 
-### Dashboard Features
+Displays the highest number of available job opportunities for the selected criteria.
 
-✔ Dynamic filtering
+These KPIs provide quick insights without requiring users to manually analyze large amounts of data.
 
-✔ Salary comparison by role
+-
 
-✔ Skill-based analysis
+# ❎ Data Validation & Interactivity
 
-✔ Interactive reporting
+To improve user experience and maintain data integrity, Data Validation was implemented throughout the dashboard.
 
-✔ Automated calculations
+![Data Validation](image/data_validation.png)
 
-✔ Career-focused insights
+### Benefits
 
-Users can explore different job positions, compare salaries, and evaluate how skills influence compensation levels across the data industry.
+* Restricts selections to valid options
+* Prevents incorrect user input
+* Enhances dashboard usability
+* Supports dynamic filtering and reporting
 
----
+Dropdown menus allow users to filter data by:
 
-# 💰 Salary Analysis
+* Job Title
+* Country
+* Job Schedule Type
 
-A key component of the dashboard focuses on salary trends across different job roles.
+This creates a fully interactive dashboard experience.
 
-![Salary Analysis](Images/Salary_Analysis.png)
+-
 
-### Insights
+# 🧮 Formula Logic
 
-* Senior-level positions generally command significantly higher salaries.
-* Technical and engineering-focused roles tend to outperform many entry-level analytical positions.
-* Salary distribution varies substantially across job categories.
-* Specialized expertise often correlates with stronger earning potential.
+One of the key calculations used in this project is the dynamic median salary formula.
 
----
+```excel
+=MEDIAN(
+IF(
+(jobs[job_title_short]=A2)*
+(jobs[job_country]=country)*
+(ISNUMBER(SEARCH(type,jobs[job_schedule_type])))*
+(jobs[salary_year_avg]<>0),
+jobs[salary_year_avg]
+)
+)
+```
 
-# 🧠 Skills Analysis
+### Formula Purpose
 
-Understanding which skills drive compensation is critical for career development.
+This formula calculates the median salary based on multiple criteria:
 
-![Job Skill Analysis](Images/Job_Skill_Analysis.png)
+* Selected Job Title
+* Selected Country
+* Selected Employment Type
 
-The skills analysis section helps identify which technical competencies appear most frequently across data-related careers.
+By combining several conditions, the dashboard generates personalized salary insights that automatically respond to user selections.
 
-### Key Observations
+-
 
-* Technical skills remain highly valued across the industry.
-* Certain skills appear consistently across high-paying roles.
-* Skill diversification increases opportunities across multiple career paths.
+# 📈 Key Insights
 
----
+The analysis revealed several important trends within the data job market.
 
-# 📈 Salary vs Skills Analysis
+### 💡 Higher-Level Roles Earn More
 
-This section combines salary information with skill requirements to provide deeper insight into market demand.
+Senior and specialized positions generally command higher salaries than entry-level roles.
 
-![Salary vs Skills](Images/Salary_Vs_Skills.png)
+### 💡 Location Significantly Impacts Compensation
 
-### Key Findings
+Salary expectations vary considerably across countries and regions.
 
-* High-paying positions frequently require advanced technical skills.
-* Specialized skills often contribute to higher compensation levels.
-* Continuous skill development can improve long-term career opportunities.
+### 💡 Employment Type Influences Earnings
 
----
+Different work arrangements can result in substantial differences in compensation.
 
-# ⚡ Advanced Excel Techniques
+### 💡 Data Supports Better Career Decisions
 
-This project incorporates several advanced Excel features.
+Using real job market data provides a clearer understanding of career opportunities and salary expectations.
 
-## Power Query
-
-Used for data extraction, cleaning, and transformation.
-
-## Data Modeling
-
-Used to establish relationships between datasets.
-
-## DAX Measures
-
-Implemented to create dynamic calculations and support interactive reporting.
-
-## Pivot Tables & Pivot Charts
-
-Used to summarize large volumes of data and generate analytical insights.
-
-## XLOOKUP
-
-Used to retrieve dynamic information based on user selections.
-
-## Data Validation
-
-Implemented interactive dropdown menus and user controls throughout the dashboard.
-
----
-
-# 🔍 Challenges Encountered
-
-One of the most valuable aspects of this project was troubleshooting issues that emerged during dashboard development.
-
-While working with multiple datasets loaded into Excel's Data Model, I encountered challenges involving relationships, Pivot Tables, and DAX calculations. Some dashboard elements stopped responding as expected, requiring additional investigation into how Excel manages connections between tables.
-
-Resolving these issues strengthened my understanding of:
-
-* Data Modeling
-* Relationship Management
-* Dashboard Architecture
-* Troubleshooting Analytical Workflows
-
-These experiences reinforced the importance of validating data structures before performing analysis.
-
----
-
-# 📌 Key Business Insights
-
-After analyzing the dataset, several important patterns emerged:
-
-### 1. Specialized Roles Earn More
-
-Data Engineering and advanced technical positions generally offer higher compensation than many entry-level analytical roles.
-
-### 2. Location Matters
-
-Geographic location remains one of the strongest factors influencing salary outcomes.
-
-### 3. Skills Influence Earnings
-
-Professionals possessing in-demand technical skills often earn higher salaries.
-
-### 4. Data Supports Better Career Decisions
-
-Using real job market data provides a clearer picture of opportunities than relying on assumptions alone.
-
----
 
 # 🚀 Skills Demonstrated
 
 This project showcases my ability to:
 
-* Clean and transform messy datasets
-* Build analytical data models
-* Create interactive dashboards
-* Perform exploratory data analysis
-* Develop business-focused visualizations
-* Apply Excel for business intelligence
-* Communicate insights through data storytelling
+* Clean and structure datasets
+* Build interactive Excel dashboards
+* Apply advanced Excel formulas
+* Implement data validation systems
+* Analyze salary trends
+* Create business-focused visualizations
+* Transform raw data into actionable insights
+* Communicate findings through data storytelling
 
----
+-
 
 # 🏁 Conclusion
 
-This project demonstrates how Microsoft Excel can serve as a powerful analytics and business intelligence platform when combined with effective data preparation and visualization techniques.
+This project demonstrates how Microsoft Excel can be leveraged as a powerful analytics and business intelligence tool to analyze real-world job market data.
 
-Through Power Query, Data Modeling, Pivot Tables, DAX Measures, and dashboard design, I transformed raw job market data into an interactive analytical solution capable of answering real-world business questions.
+By combining advanced formulas, interactive filtering, data validation, and visual reporting techniques, I transformed raw salary data into an interactive dashboard capable of answering important questions about compensation trends across job roles, countries, and employment types.
 
-More importantly, this project strengthened my ability to think beyond charts and formulas. It reinforced the importance of understanding the business problem, preparing reliable data, building scalable analytical solutions, and communicating insights that support better decision-making.
+Beyond the technical implementation, this project strengthened my ability to think like a data analyst—identifying business problems, organizing data, building analytical solutions, and communicating insights that support informed decision-making.
 
-The experience highlighted a fundamental principle of analytics: data only becomes valuable when it is transformed into information that people can use to make informed decisions.
+The most valuable lesson from this project is that data becomes truly impactful when it is transformed into information that helps people make better decisions.
 
----
+-
 
 # 👨‍💻 Author
 
-## Zacch Tech
+## Zacch
+**Python Djnago Developer| Data Analyst | Excel Analyst | Data Visualization Enthusiast**
 
-Aspiring Data Analyst | Excel Analyst | Data Visualization Enthusiast
+Passionate about transforming raw data into meaningful insights through analytics, dashboard development, and data storytelling.
 
-Passionate about transforming raw data into meaningful insights through analytics, visualization, and storytelling.
-
-### Connect With Me
-
-**LinkedIn:** Your LinkedIn URL
-
-**GitHub:** Your GitHub URL
 
 If you found this project interesting, feel free to connect with me and explore my other analytics projects.
